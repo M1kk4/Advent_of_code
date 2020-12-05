@@ -15,4 +15,4 @@ def my_seat(lines):
 lines = open("plane.txt", "r").read().rsplit()
 
 print(max(id_seat(lines)))
-print(my_seat(lines))
+print(int(my_seat(lines)))
