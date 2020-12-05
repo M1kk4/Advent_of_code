@@ -7,12 +7,11 @@ def id_seat(lines):
         list.append(sid)
     return list
 def my_seat(lines):
-    for line in sorted(id_seat(lines)):
-        for line_2 in sorted(id_seat(lines)):
-            if line - line_2 == 2:
-                return (line + line_2)/2
+    for i in range(len(lines) -1):
+        if abs(lines[i] - lines[i + 1]) == 2:
+            return (lines[i] + lines[i + 1])/2
 
 lines = open("plane.txt", "r").read().rsplit()
 
 print(max(id_seat(lines)))
-print(int(my_seat(lines)))
+print(int(my_seat(sorted(id_seat(lines)))))
