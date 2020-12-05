@@ -1,4 +1,4 @@
-Part 1.
+# Part 1
 
 <pre><code>
 f = open("code.txt", "r")
@@ -14,7 +14,7 @@ for line in numbers:
             print(str(answer))
 </pre></code>
 
-Part 2.
+# Part 2
 
 <pre><code>
 f = open("code.txt", "r")
